@@ -20,12 +20,35 @@ Before running the application, ensure you have the following installed:
   - `requests`
   - `PyGObject`
   - `cairosvg`
+- AppIndicator3 library
 
 You can install the required packages using pip:
 
 ```bash
 pip install requests PyGObject cairosvg
 ```
+
+### Installing AppIndicator3
+To install the AppIndicator3 library, use the following commands based on your Linux distribution:
+
+- **For Ubuntu/Debian-based systems**:
+  ```bash
+  sudo apt-get install gir1.2-appindicator3-0.1
+  ```
+
+- **For Fedora**:
+  ```bash
+  sudo dnf install libappindicator-gtk3
+  ```
+
+- **For Arch Linux**:
+  ```bash
+  sudo pacman -S libappindicator-gtk3
+  ```
+
+- **For other distributions**:
+  Check your package manager for a package named `libappindicator` or `appindicator` and install it.
+
 
 ## Environment Variables
 You can set the `FEE_API_BASE_URL` environment variable to specify a custom API base URL for fetching fee rates. If not set, it defaults to `https://mempool.space`.
